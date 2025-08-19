@@ -1,0 +1,14 @@
+.breadcrumb-item {
+    font-size: 15px;
+  
+    &__link {
+      color: #3483FA;
+      font-weight: 400;
+      text-decoration: none;
+  
+      &:hover {
+        color: darken(#3483FA, 10%);
+        text-decoration: underline;
+      }
+    }
+  }

@@ -1,0 +1,43 @@
+.pagination-container {
+    margin: 12px 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+  
+    &__page {
+      width: 28px;
+      height: 28px;
+      padding: 4px;
+      font-size: 16px;
+      font-weight: 400;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-bold);
+  
+      &-active {
+        background-color: #fff;
+        border: 1px solid #3483fa;
+        font-weight: 600;
+      }
+    }
+  
+    &__link {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 469px) and (max-width: 1024px) {
+    .pagination-container {
+      gap: 6px;
+    }
+    .pagination-container__page {
+      width: 32px;
+      height: 32px;
+      font-size: 16px;
+    }
+  }
+  

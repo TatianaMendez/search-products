@@ -2,23 +2,29 @@
   "name": "search-product",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "nodemon src/server/server.js",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "NODE_ENV=production node src/server/server.js"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.85.0",
+    "express": "^5.1.0",
+    "font-proxima-nova": "^1.0.1",
+    "next": "15.4.6",
+    "node-fetch": "^3.3.2",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.4.6"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "nodemon": "^3.1.10",
+    "sass": "^1.90.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

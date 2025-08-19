@@ -1,0 +1,321 @@
+.card-detail{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    overflow: hidden;           
+}
+
+.card-detail__main{
+    display: flex;
+}
+
+.card-detail__main--small{
+    gap: 24px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.card-detail--small {
+    padding: 12px;
+    margin-bottom: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    justify-content: center;
+    min-height: 160px;
+    align-items: center;
+  }
+  
+.card-detail__main--large {
+    gap: 48px;
+    padding-left: 24px;
+    align-items: flex-start;
+}
+
+.card-detail__container-img {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-detail__container-img--small {
+    width: 259px;
+    max-width: 259px;
+    height: 250px;
+    flex: 0 0 259px;
+    margin: 0; 
+}
+
+.card-detail__container-img--large {
+    max-width: 900px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.card-detail__thumbs{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 72px;
+    max-height: 100%;
+    overflow: auto;
+    align-items: center;
+}
+
+.card-detail__thumb{
+    cursor: pointer;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #e5e5e5;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.card-detail__thumb--active{
+    border-color: #3483fa;
+    box-shadow: 0 0 0 2px rgba(52,131,250,.15);
+}
+
+.card-detail__main{
+    position: relative;
+    flex: 1;
+    height: 100%;
+}
+
+.card-detail__visual{
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.card-detail__visual--large{
+    width: 100%;
+}
+
+.card-detail__img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card-detail__info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+    min-width: 0;
+    overflow: hidden;        
+}
+
+.card-detail__title, .card-detail__price{
+    color: var(--color-bold);
+}
+
+.card-detail__title--small{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 6px;
+    margin-top: 30px;
+}
+
+.card-detail__title--large{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top:28px;
+}
+
+.card-detail__caption{
+    color: var(--color-light);
+    font-weight: 400;
+}
+
+.card-detail__caption--small{
+    font-size: 14px;
+}
+
+.card-detail__caption--large{
+    font-size: 18px;
+}
+
+.card-detail__price-container{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;                
+    max-width: 100%;
+}
+
+.card-detail__price-container--small{
+    margin: 25px 0px; 
+    font-weight: 400;
+}
+
+.card-detail__price-container--large{
+    margin: 28px 0px; 
+}
+
+.card-detail__price--large{
+    font-size: 36px;
+}
+
+.card-detail__price--small{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.card-detail__installments, .card-detail__free-shipping{
+    color: var(--color-green, #00A650);
+}
+
+.card-detail__installments--small{
+    font-size: 14px;
+}
+
+.card-detail__installments--large{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.card-detail__free-shipping--small{
+    font-size: 14px;
+    font-weight: 600;
+}    
+
+.card-detail__free-shipping--large{
+    font-size: 18px;
+    font-weight: 600;
+}    
+
+.card-detail__condition{
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--color-bold);
+    margin-top: 28px;
+}
+
+.card-detail__title{
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.card-detail__installments{
+  max-width: 100%;
+}
+
+@media (max-width: 468px) {
+    .card-detail--large {
+        gap: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-detail__visual--large{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .card-detail__container-img--large {
+        width: 100%;
+        max-width: 480px;
+        flex-direction: column;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        order: 1;
+    }
+    .card-detail__thumbs{
+        flex-direction: row;
+        width: 100%;
+        height: 92px;
+        padding: 8px 12px;
+        gap: 16px;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        order: 2;
+    }
+    .card-detail__thumb{
+        width: 56px;
+        height: 56px;
+        flex: 0 0 auto;
+    }
+    .card-detail__main{
+        width: 100%;
+        order: 1;
+    }
+
+    .card-detail__main--large{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 3px;
+       padding-left: 0px;
+    }
+
+    .card-detail--small {
+      gap: 12px;
+      align-items: center;
+      min-height: 140px; 
+    }
+
+    .card-detail__container-img--small {
+      max-width: 140px;
+      width: 140px;
+      height: 140px;   
+      flex: 0 0 140px;         
+      margin: 0 auto;
+    }
+
+    .card-detail__title--small{
+      font-size: 16px;
+      margin-top: 8px;
+      margin-bottom: 4px;
+      display: -webkit-box;
+      line-clamp: 2;
+      -webkit-line-clamp: 2; 
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-detail__caption--small{
+      font-size: 12px;
+    }
+
+    .card-detail__price--small{
+      font-size: 20px;
+    }
+
+    .card-detail__price-container--small{
+      margin: 8px 0px;
+    }
+
+    .card-detail__installments--small{
+      font-size: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+    }
+}
+
+@media (min-width: 469px) and (max-width: 1024px) {
+  .card-detail{ max-width: 900px; }
+  .card-detail__main--large{ gap: 32px; padding-left: 16px; }
+  .card-detail__container-img--large{ height: 380px; }
+  .card-detail__price--large{ font-size: 30px; }
+  .card-detail__installments--large{ font-size: 16px; }
+  .card-detail__title--large{ font-size: 20px; margin-top: 20px; }
+  .card-detail__caption--large{ font-size: 16px; }
+  .card-detail__thumbs{ width: 64px; }
+}
