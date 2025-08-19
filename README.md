@@ -20,18 +20,17 @@ npm run dev
 
 ---
 
-## 🔧 Requisitos
+## Requisitos
 
 * Node.js **>= 20** 
 * npm 
 
 ---
 
----
-
 ## Variables de entorno
 
-Crea **.env.local** (desarrollo) y **.env.production** (deploy) con al menos:
+Crea **.env.local** (desarrollo): 
+(La aplicación tiene una validación por si este archivo no existe)
 
 ```bash
 # URL base del mismo host donde corren Next + API Express
@@ -43,3 +42,5 @@ DETAIL_TTL_MS=600000     # 10 minutos
 ```
 
 ---
+
+Author: Tatiana Méndez
